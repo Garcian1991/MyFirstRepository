@@ -1,0 +1,5 @@
+E:\Documents\Мои документы\Работа\Veeam\GZipTest\CompressionFiles\bin\Debug\CompressionFiles.dll
+E:\Documents\Мои документы\Работа\Veeam\GZipTest\CompressionFiles\bin\Debug\CompressionFiles.pdb
+E:\Documents\Мои документы\Работа\Veeam\GZipTest\CompressionFiles\obj\Debug\CompressionFiles.dll
+E:\Documents\Мои документы\Работа\Veeam\GZipTest\CompressionFiles\obj\Debug\CompressionFiles.pdb
+E:\Documents\Мои документы\Работа\Veeam\GZipTest\CompressionFiles\obj\Debug\CompressionFiles.csprojResolveAssemblyReference.cache

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GZipTest", "GZipTest\GZipTest.csproj", "{3453A4C5-6147-47D5-AD8C-C5BAF4044D06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompressionFiles", "CompressionFiles\CompressionFiles.csproj", "{B18A8101-F925-48D4-92E4-3EA7B5EC1DFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3453A4C5-6147-47D5-AD8C-C5BAF4044D06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3453A4C5-6147-47D5-AD8C-C5BAF4044D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3453A4C5-6147-47D5-AD8C-C5BAF4044D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3453A4C5-6147-47D5-AD8C-C5BAF4044D06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B18A8101-F925-48D4-92E4-3EA7B5EC1DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B18A8101-F925-48D4-92E4-3EA7B5EC1DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B18A8101-F925-48D4-92E4-3EA7B5EC1DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B18A8101-F925-48D4-92E4-3EA7B5EC1DFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
