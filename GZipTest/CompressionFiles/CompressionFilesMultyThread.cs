@@ -2,6 +2,7 @@
 using System.IO;
 using System.IO.Compression;
 using System.Threading;
+using System.Diagnostics;
 
 namespace CompressionFiles
 {
@@ -56,6 +57,8 @@ namespace CompressionFiles
         {
             try
             {
+                Stopwatch watch = new Stopwatch();
+                watch.Start();
                 using (FileStream sourceFile = File.OpenRead(_fileName))
                 {
                     using (FileStream destinationFile = File.Create(_archiveName + ".gz"))
@@ -106,9 +109,26 @@ namespace CompressionFiles
                                 destinationFile.Write(_cmprssBuf[i], 0, _cmprssBuf[i].Length);
                             }
                         }
+                        Console.WriteLine("Compressed {0} from {1} to {2} bytes.",
+                            sourceFile, sourceFile.Length.ToString(), destinationFile.Length.ToString());
                         OutputMessage = String.Format("Compressed {0} to {1}.", sourceFile.Name, destinationFile.Name);
                         Success = 0;
                     }
+                }
+                //watch.Stop();
+                //TimeSpan ts = watch.Elapsed;
+                //string elapsedTime = String.Format("\nВремя компрессии: {0:00}:{1:00}.{2:00}", 
+                //                                    ts.Minutes, ts.Seconds, ts.Milliseconds / 10);
+                //OutputMessage += elapsedTime;
+                using (FileStream sourceFile = File.OpenRead(_archiveName))
+                {
+                    byte[] buf = new byte[8];
+                    sourceFile.Read(buf, 0, 8);
+                    int ComprLen = BitConverter.ToInt32(buf, 4);
+                    byte[] c = new byte[ComprLen + 1];
+                    buf.CopyTo(c, 0);
+                    sourceFile.Read(c, 8, ComprLen - 9);
+                    int d = BitConverter.ToInt32(c, ComprLen - 5);
                 }
             }
             #region Исключения
@@ -172,6 +192,8 @@ namespace CompressionFiles
         {
             try
             {
+                Stopwatch watch = new Stopwatch();
+                watch.Start();
                 using (FileStream sourceFile = File.OpenRead(_archiveName))
                 {
                     using (FileStream destinationFile = File.Create(_fileName))
@@ -226,6 +248,11 @@ namespace CompressionFiles
                         Success = 0;
                     }
                 }
+                watch.Stop();
+                TimeSpan ts = watch.Elapsed;
+                string elapsedTime = String.Format("\nВремя компрессии: {0:00}:{1:00}.{2:00}",
+                                                    ts.Minutes, ts.Seconds, ts.Milliseconds / 10);
+                OutputMessage += elapsedTime;
             }
             #region Исключения
             catch (InvalidDataException)

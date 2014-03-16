@@ -5,3 +5,11 @@ E:\Documents\Мои документы\Работа\Veeam\GZipTest\GZipTest\obj\
 E:\Documents\Мои документы\Работа\Veeam\GZipTest\GZipTest\obj\Debug\GZipTest.pdb
 E:\Documents\Мои документы\Работа\Veeam\GZipTest\GZipTest\bin\Debug\CompressionFiles.dll
 E:\Documents\Мои документы\Работа\Veeam\GZipTest\GZipTest\bin\Debug\CompressionFiles.pdb
+E:\Documents\Мои документы\GitHub\MyFirstRepository\GZipTest\GZipTest\obj\Debug\GZipTest.exe
+E:\Documents\Мои документы\GitHub\MyFirstRepository\GZipTest\GZipTest\obj\Debug\GZipTest.pdb
+E:\Documents\Мои документы\GitHub\MyFirstRepository\GZipTest\GZipTest\bin\Debug\GZipTest.exe
+E:\Documents\Мои документы\GitHub\MyFirstRepository\GZipTest\GZipTest\bin\Debug\GZipTest.pdb
+E:\Documents\Мои документы\GitHub\MyFirstRepository\GZipTest\GZipTest\bin\Debug\CompressionFiles.dll
+E:\Documents\Мои документы\GitHub\MyFirstRepository\GZipTest\GZipTest\bin\Debug\CompressionFiles.pdb
+E:\Documents\Мои документы\GitHub\MyFirstRepository\GZipTest\GZipTest\obj\Debug\GZipTest.csprojResolveAssemblyReference.cache
+E:\Documents\Мои документы\GitHub\MyFirstRepository\GZipTest\GZipTest\bin\Debug\GZipTest.exe.config
